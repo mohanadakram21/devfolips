@@ -1,0 +1,485 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2,h3,h1,h4{
+    color: black;
+}
+
+body{
+    background-color: #F5F5F5;
+    
+}
+
+
+
+#nav{
+    background-color: rgba(0,0,0,0.9);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+.navbar-brand{
+    color: white;
+    /* margin: 0 30px ; */
+}
+#navbarSupportedContent  ul li{ 
+       /* margin: 0 20px; */
+
+}
+#navbarSupportedContent  ul li a{
+    
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+/* #navbarSupportedContent ul li a::after{
+    content: "";
+    width: 0px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    transition: .4s;
+    
+}
+#navbarSupportedContent ul li :hover::after{
+    width: 100%;
+    
+    } */
+
+
+
+     #nav-item::after{
+        content: "";
+        width: 0px;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        background-color: white;
+        transition: .4s;
+        
+    }
+    #nav-item ul li:hover::after{
+        width: 100%;
+        
+        }
+
+
+
+    #navbar-brand:hover{
+color: #F5F5F5;
+    }
+.dropdown-menu{
+    background-color: black;
+    
+}
+
+
+    .mainpage{
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7 ), rgba(0,0,0,0.7)) , url(../img/intro-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.mainpage .mainpage-text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 64px;
+    color: white;
+}
+.mainpage-textp{
+text-align: center;
+}
+.mainpage-textp::after{
+    content: '';
+    animation-name: typing;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes typing {
+    0%{
+        content: 'web design';
+    }
+    25%{
+        content: 'web ';
+    }
+    50%{
+        content: 'web developer';
+    }
+    75%{
+        content: 'photograhic';
+    }
+    100%{
+        content: 'front end';
+    }
+    
+}
+.about-profile{
+    
+
+}
+.about{
+padding: 50px 10px ;  
+background-color: white;
+box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+margin: 20px 0;
+}
+/* .about-imag img{
+    width: 100%;
+    
+} */
+.about-imag {
+width: 30%;
+height: 80%;
+margin-right: 30px;
+margin-top: 20px;
+}
+.about-img {
+width: 50%;
+margin-bottom: 20px;
+}
+.aboutme{
+    
+    font-family: 
+    system-ui
+    -apple-system
+    "Segoe UI"
+    Roboto
+    "Helvetica Neue"
+    "Noto Sans"
+    "Liberation Sans"
+    Arial
+    sans-serif
+    "Apple Color Emoji"
+    "Segoe UI Emoji"
+    "Segoe UI Symbol"
+    "Noto Color Emoji";
+
+    font-weight: 200;
+    font-size: x-large;
+
+}
+.aboutme h3{
+    position: relative;
+    margin-bottom: 50px;
+}
+.aboutme h3::after{
+    content: '';
+    width: 100px;
+    height: 5px;
+    background-color: blue;
+    position: absolute;
+    left: 8%;
+    top: 110%;
+    transform: translate(-50%);
+}
+.web-h3{
+    position: relative;
+    margin-bottom: 25px;
+}
+.web-h3::after{
+    content: '';
+    width: 50px;
+    height: 5px;
+    background-color: blue;
+    position: absolute;
+    left: 50%;
+    top: 110%;
+    transform: translate(-50%);
+}
+
+.about-img-data .title-s{
+color: black;
+font-weight:bold ;
+
+
+}
+.about-img-data p {
+    width: 250px;
+    text-align: start;
+    margin: 30px 0;
+}
+
+.skill-mf{
+    width: 90%;
+}
+.secondpage {
+
+width: 100%;
+}
+.secondpage h2 {
+text-align: center;
+color: black;
+font-weight: bold;
+font-size: 64px;
+}
+.secondpage p {
+text-align: center;
+}
+.secondpage #service-p{
+    background-color: white;
+    padding: 10px;
+    text-align: center; 
+    margin: 20px 30px;   
+    border-radius: 20px;
+    width: 28%;
+}
+/* /* .secondpage  #service-p i{
+border: 3px solid blue;
+border-radius: 50%;
+padding: 30px 5px;
+margin-top: 20px;
+} */
+.secondpage  .circle:hover{
+color: white;
+background-color: blue;
+border: 10px solid rgba(3, 3, 4, 0.985);
+/* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+border: 5px solid rgba(100, 100, 221, 0.708); */
+} 
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid blue;
+    padding: 10px;
+    margin: auto;
+  }
+  .circle i{
+    margin-top: 40px;
+    
+  }
+  
+.thirdpage{
+    background-image:linear-gradient(rgba(14, 6, 241, 0.7), rgba(43, 2, 247, 0.7)) , url(../img/post-3.jpg);
+    
+    min-height: auto;
+    margin: 20px 0;
+    
+
+}
+/* .icon-third{
+    width: 25%;
+    padding: 10px;
+    text-align: center; 
+    margin: 50px 0px 20px 0px;   
+    border-radius: 20px;
+} */
+.icon-third i{
+border: 5px solid white;
+border-radius: 50%;
+padding: 40px 30px;
+color: white;
+
+}
+.icon-third h4{
+color: white;
+margin: 15px 0;
+}
+
+.fourpage h2{
+    text-align: center;
+    font-weight: bold;
+}
+.fourpage h4{text-align: center;
+color:gray;}
+
+.fourpage .card{
+    /* margin: 10px 20px; */
+    background-color: #F5F5F5;
+    border: 1px solid #F5F5F5;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    overflow: hidden;
+
+}
+.fourpage .card h4{
+text-align: start;
+}
+.fourpage .card i{
+    border: 10px solid blue;
+border-radius: 50%;
+color: blue;
+background-color: #F5F5F5;
+padding: 30px;
+margin: 0 40px;
+text-align: end;
+}
+.fourpage .card .cardbody1{
+text-align: start;
+}
+.fourpage .card .cardbody1 p{
+text-align: start;
+margin-left: 10px;
+}
+
+.fourpage .card img:hover{
+    transform: scale(1.2) ;
+    transition: 2s; 
+    overflow: hidden;
+}
+.fivepage{
+    background-image:linear-gradient(rgba(43, 2, 247, 0.7),rgba(43, 2, 247, 0.7)) , url(../img/overlay-bg.jpg);
+    width: 100%;
+    min-height: 60vh;
+    margin: 20px 0;
+}
+#carouselExample{
+    margin-top: 60px;
+}
+.five-personal .carousel-item img{
+    border-radius: 50%;
+    margin: 50px 44%;
+}
+.five-personal .carousel-item h2,p{
+text-align: center;
+}
+.five-personal .carousel-item p{
+    margin-bottom: 50px;
+text-align: center};
+
+
+/* she doesnot work could you help me  */
+
+.fivepage .carousel-indicators [data-bs-target] 
+{width: 20px;
+height: 20px;
+background-color: blue;
+border-radius: 50%;
+
+}
+/* ^ ^ ^ ^ ^ ^ */
+
+.sixpage{
+    width: 100%;
+    padding: 50px 0;
+    margin: 50px 0;
+}
+.sixpage h2{ text-align: center; font-weight: bold;}
+.sixpage p{text-align: center;
+}
+.card-footer img {
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    margin: 0 20px;
+}
+
+.card-footer img{
+    width: 100%;
+}
+.card-footer img{
+    width: 10%;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.card img:hover{
+    cursor: pointer;
+
+}
+.sevenpage{
+    background-image:linear-gradient(rgba(43, 2, 247, 0.7),rgba(43, 2, 247, 0.7)) , url(../img/overlay-bg.jpg);
+    
+    min-height: 100vh;
+    margin-top: 20px;
+   
+}
+.sevenpage .sendpage .form{
+margin: 0;
+padding: 0;
+overflow-y: hidden;
+}
+.sevenpage h4{
+    position: relative;
+    margin: 30px 0;
+    display: grid;
+    grid-auto-flow: column;
+}
+.sevenpage h4::after{
+    content: '';
+    width: 80px;
+    height: 5px;
+    background-color: blue;
+    position: absolute;
+    left: 6%;
+    top: 110%;
+    transform: translate(-50%);
+}
+
+.sendpage{
+    width: 50%;
+}
+
+.endpage{
+    
+    margin: 80px 0;
+    min-height: 60vh;
+    background-color: #F5F5F5;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.getin{
+    /* width: 50%; */
+    margin-top: 50px;
+    
+}
+.getin p{
+text-align: start;
+}
+
+.getin .icon-social-n i{
+    margin: 30px 10px;
+    padding: 20px 20px;
+    border: 5px solid blue;
+    border-radius: 50%;
+}
+.getin .icon-social-n i:hover{ 
+color: #F5F5F5;
+background-color: blue;
+border: 5px solid white;
+}
+.sendpage h4{
+    margin-top: 80px;
+}
+#form-label input{
+     width: 20px;
+    
+}
+
+.footer{
+    background-color: blue;
+    min-height: 10vh;
+}
+
+.footer p{
+    text-align: center;
+    color: #F5F5F5;
+}
+
+
+.protfoloio-p .card{
+    width: calc(100% / 3 - 40px) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
